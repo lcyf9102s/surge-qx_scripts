@@ -3,8 +3,7 @@
 
 功能：解放双手，抵制形式主义
 
-配置：
-先配置好mitm根证书
+1.配置：
 (1) Surge
 
 [Script]
@@ -27,6 +26,10 @@ hostname=student.wozaixiaoyuan.com
 0 0 * * * https://raw.githubusercontent.com/lcyf9102s/surge-qx_scripts/main/wozxy_final.js, tag=我在校园自动打卡, img-url=https://github.com/lcyf9102s/surge-qx_scripts/raw/main/382B6BBA-1669-4C43-840E-DCE317761DB9.png, enabled=true
 [MITM]
 hostname = student.wozaixiaoyuan.com
+
+2.获取cookie
+（1）首次使用，要在未打卡的情况下登陆小程序并打卡，若提示获取cookie成功，则完成cookie获取；
+（2）根据thor抓包结果分析，cookie中的JWSESSION有效期大约14天，因此需每14天更新一次cookie（进入小程序打卡界面，提示cookie更新成功即可）
 
 
 */
