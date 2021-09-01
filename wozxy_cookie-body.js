@@ -1,7 +1,7 @@
 const cookieName = '我在校园cookie'
 const cookieKey4 = 'ayane_cookie_wzxy_body'
 const ayane = init()
-const cookieVal4 = $response.body
+const cookieVal4 = $request.body
 if (cookieVal4) {
   if (ayane.setdata(cookieVal4, cookieKey4)) {
     ayane.msg(`${cookieName}`, '获取Cookie: 成功', '')
