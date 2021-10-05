@@ -8,4 +8,4 @@
 我在校园cookie获取(body,header) = type=http-request,pattern=^https:\/\/student\.wozaixiaoyuan\.com\/health\/save\.json\/?.?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/lcyf9102s/surge-qx_scripts/main/wozxy_cookieff.js,script-update-interval=0
 
 [MITM]
-hostname=student.wozaixiaoyuan.com
+hostname = %APPEND% student.wozaixiaoyuan.com
