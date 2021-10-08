@@ -8,9 +8,14 @@ const cookieVal1 = $request.headers['JWSESSION']
 const cookieVal2 = $request.headers['Referer']
 const cookieVal3 = $request.headers['User-Agent']
 const cookieVal4 = $request.body
-if (cookieVal1, cookieVal2, cookieVal3, cookieVal4) {
+if ((cookieVal4 == null) || (cookieVal4 == 'null4')) {
   if (ayane.setdata(cookieVal1, cookieKey1) && ayane.setdata(cookieVal2, cookieKey2) && ayane.setdata(cookieVal3, cookieKey3) && ayane.setdata(cookieVal4, cookieKey4)) {
-    ayane.msg(`${cookieName}`, '获取Cookie: 成功', '')
+    ayane.msg(`${cookieName}`, '获取bodyCookie: 成功', '')
+    ayane.log(`[${cookieName}] 获取bodyCookie: 成功, cookie: ${cookieVal1}`)
+  }
+} else {
+  if (ayane.setdata(cookieVal1, cookieKey1) && ayane.setdata(cookieVal2, cookieKey2) &&ayane.setdata(cookieVal3, cookieKey3)) {
+    ayane.msg(`${cookieName}`, '更新Cookie: 成功', '')
     ayane.log(`[${cookieName}] 获取Cookie: 成功, cookie: ${cookieVal1}`)
   }
 }
