@@ -1,5 +1,5 @@
-#!name=我在校园健康打卡
-#!desc=我在校园健康打卡自动打卡
+#!name=我在校园健康打卡首次cookie获取
+#!desc=我在校园健康打卡自动打卡body获取
 #!system=ios
 
 [Script]
