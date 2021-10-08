@@ -8,7 +8,7 @@ const ayane = init()
 const cookieVal1 = $request.headers['JWSESSION']
 const cookieVal2 = $request.headers['Referer']
 const cookieVal3 = $request.headers['User-Agent']
-Cindy cookieVal4 = ayane.getdata(cookieKey4)
+const cookieVal4 = ayane.getdata(cookieKey4)
 if ((cookieVal4 == null) || (cookieVal4 == 'null4')) {ayane.done()}
 else (cookieVal1, cookieVal2, cookieVal3) {
   if (ayane.setdata(cookieVal1, cookieKey1) && ayane.setdata(cookieVal2, cookieKey2) &&ayane.setdata(cookieVal3, cookieKey3)) {
