@@ -7,9 +7,10 @@
 (1) Surge
 
 [Script]
-我在校园cookie更新 = type=http-request,pattern=^https:\/\/student\.wozaixiaoyuan\.com\/?.?,script-path=https://raw.githubusercontent.com/lcyf9102s/surge-qx_scripts/main/wzxycookie_update.js,script-update-interval=0
+
+我在校园cookie更新 = type=http-request,pattern=^https:\/\/student\.wozaixiaoyuan\.com\/health\/getToday\.json\/?.?,script-path=https://raw.githubusercontent.com/lcyf9102s/surge-qx_scripts/main/wzxycookie_update.js,script-update-interval=0,requires-body=0
 我在校园自动打卡cookie版 = type=cron,cronexp=0 0-16/4 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/lcyf9102s/surge-qx_scripts/main/wozxy_final.js,script-update-interval=0
-我在校园cookie获取(body,header) = type=http-request,pattern=^https:\/\/student\.wozaixiaoyuan\.com\/health\/save\.json\/?.?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/lcyf9102s/surge-qx_scripts/main/wozxy_cookieff.js,script-update-interval=0
+我在校园cookie获取(body,header) = type=http-request,pattern=^https:\/\/student\.wozaixiaoyuan\.com\/health\/save\.json\/?.?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/lcyf9102s/surge-qx_scripts/main/wozxy_cookie-getbody.js,script-update-interval=0
 
 [MITM]
 hostname=student.wozaixiaoyuan.com
