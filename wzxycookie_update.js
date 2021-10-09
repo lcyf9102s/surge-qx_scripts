@@ -2,14 +2,12 @@ const cookieName = '我在校园cookie更新'
 const cookieKey1 = 'ayane_cookie_wzxy_JWSESSION'
 const cookieKey2 = 'ayane_cookie_wzxy_Referer'
 const cookieKey3 = 'ayane_cookie_wzxy_User-Agent'
-const cookieKey4 = 'ayane_cookie_wzxy_body'
 
 const ayane = init()
 const cookieVal1 = $request.headers['JWSESSION']
 const cookieVal2 = $request.headers['Referer']
 const cookieVal3 = $request.headers['User-Agent']
-const cookieVal4 = ayane.getdata(cookieKey4)
-if ((cookieVal4 == null) || (cookieVal4 == 'null4')) {ayane.done()} else (cookieVal1, cookieVal2, cookieVal3) {
+if (cookieVal1, cookieVal2, cookieVal3) {
   if (ayane.setdata(cookieVal1, cookieKey1) && ayane.setdata(cookieVal2, cookieKey2) &&ayane.setdata(cookieVal3, cookieKey3)) {
     ayane.msg(`${cookieName}`, '更新Cookie: 成功', '')
     ayane.log(`[${cookieName}] 获取Cookie: 成功, cookie: ${cookieVal1}`)
