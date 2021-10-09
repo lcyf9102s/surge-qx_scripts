@@ -9,12 +9,11 @@ const cookieVal2 = $request.headers['Referer']
 const cookieVal3 = $request.headers['User-Agent']
 const cookieVal4 = $request.body
 if ((cookieVal4 == null) || (cookieVal4 == 'null4')) {
-  ayane.setdata(cookieVal1, cookieKey1)
+        ayane.setdata(cookieVal1, cookieKey1)
 	ayane.setdata(cookieVal2, cookieKey2)
 	ayane.setdata(cookieVal3, cookieKey3)
 	ayane.msg(`${cookieName}`, '更新Cookie: 成功', '')
 	ayane.log(`[${cookieName}] 获取Cookie: 成功, cookie: ${cookieVal1}`)
-  }
 } else {
 	ayane.setdata(cookieVal1, cookieKey1)
 	ayane.setdata(cookieVal2, cookieKey2)
