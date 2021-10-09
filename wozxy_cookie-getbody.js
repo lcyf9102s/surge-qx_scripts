@@ -1,4 +1,4 @@
-const cookieName = '我在校园cookie更新'
+const cookieName = '我在校园cookie_body获取'
 const cookieKey1 = 'ayane_cookie_wzxy_JWSESSION'
 const cookieKey2 = 'ayane_cookie_wzxy_Referer'
 const cookieKey3 = 'ayane_cookie_wzxy_User-Agent'
