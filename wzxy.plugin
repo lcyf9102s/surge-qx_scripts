@@ -1,0 +1,7 @@
+[Script]
+http-request ^https:\/\/student\.wozaixiaoyuan\.com\/health\/getToday\.json\/?.? script-path=https://raw.githubusercontent.com/lcyf9102s/surge-qx_scripts/main/wzxycookie_update.js, timeout=10, tag=wzxycookie
+http-request ^https:\/\/student\.wozaixiaoyuan\.com\/health\/save\.json\/?.? script-path=https://raw.githubusercontent.com/lcyf9102s/surge-qx_scripts/main/wozxy_cookie-getbody.js, requires-body=true, timeout=100, tag=我在校园body
+cron "0 8-16/4 * * *" script-path=https://raw.githubusercontent.com/lcyf9102s/surge-qx_scripts/main/wozxy_final.js, tag=wozxy_final.js
+
+[MITM]
+hostname = student.wozaixiaoyuan.com
