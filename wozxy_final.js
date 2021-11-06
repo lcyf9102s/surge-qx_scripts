@@ -118,7 +118,7 @@ function init() {
 
 ayane.post(urlu, (error, response, data) => {
     let result = JSON.parse(data)
-    let title = `我在尼玛校园自动打卡`
+    let title = `我在特么的校园自动打卡`
     // 签到成功
     if (result && result.code == 0) {
       let subTitle = `签到结果: 成功`
