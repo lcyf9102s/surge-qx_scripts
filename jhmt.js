@@ -132,7 +132,7 @@ ayane.post(urlu, (error, response, data) => {
     // 签到失败
     else {
       let subTitle = `签到结果: 失败`
-      let detail = `说明: ${result.message}`
+      let detail = `说明: ${result.prize_name}`
       ayane.msg(title, subTitle, detail)
     }
      ayane.done()
