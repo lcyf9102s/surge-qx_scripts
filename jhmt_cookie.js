@@ -9,7 +9,7 @@ const cookieV1 = $request.headers['User-Agent']
 const cookieV2 = $request.headers['Cookie']
 const cookieV3 = $request.headers['Referer']
 const cookieV4 = $request.headers['X-XSRF-TOKEN']
-if (cookieVal1, cookieV2, cookieV3, cookieV4) {
+if (cookieV1, cookieV2, cookieV3, cookieV4) {
   if (ayane.setdata(cookieV1, cookie1) && ayane.setdata(cookieV2, cookie2) && ayane.setdata(cookieV3, cookie3) &&ayane.setdata(cookieV4, cookie4) ) {
     ayane.msg(`${cookieName}`, '获取Cookie: 成功', '')
     ayane.log(`[${cookieName}] 获取Cookie: 成功, cookie: ${cookieV1}`)
