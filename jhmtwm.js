@@ -124,8 +124,8 @@ ayane.post(urlu, (error, response, data) => {
     let title = `建行生活自动签到`
     // 签到成功
     if (result && result.code == 10002) {
-      let subTitle = `签到结果: 成功`
-      let detail = `自动打卡已完成 ${result.message}`
+      let subTitle = `${result.message}`
+      let detail = `自动打卡已完成 ${result.prize_nane}`
       ayane.msg(title, subTitle, detail)
     }
     // 签到失败
