@@ -48,7 +48,7 @@ const cookieV2 = ayane.getdata(cookie2)
 const cookieV3 = ayane.getdata(cookie3)
 const cookieV4 = ayane.getdata(cookie4)
 
-const url1 = `https://jxjkhd.kerlala.com/Common/activity/getAdvertList/31/8ZWXOq3w`;
+const url1 = `https://jxjkhd.kerlala.com/activity/autographnew/register/31/8ZWXOq3w`;
 const method2 = `POST`;
 const headers3 = {
 'Connection' : `keep-alive`,
