@@ -72,8 +72,7 @@ const headers3 = {
 const urlu = {
     url: url1,
     method: method2,
-    headers: headers3,
-    body: body4
+    headers: headers3
 };
 
 function init() {
